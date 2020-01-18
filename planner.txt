@@ -1,0 +1,22 @@
+class Node:
+	Edges[]
+
+class Edges:
+	Nodes[]
+	Weight - l1 or l2 distance
+
+class WeightedGraph:
+	Nodes[]
+	Edges[]
+	? GetEdges(Node)
+	? GetNodes(Edge)
+	BuildGraph(map) - what implementation?
+		- Dense connected Graph using every cell of the map
+		- PRM over map grid
+
+class OccupancyGraph:
+	WeightedGraph Freespace
+	Node Start
+	Node End
+	FindPath() - implementation of A* here
+
